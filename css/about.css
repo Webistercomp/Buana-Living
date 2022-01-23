@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quando&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #191919!important;
+    min-height: 100vh;
+}
+nav {
+    background-color: #E9C33F;
+    padding: 0.5rem;
+    width: 100%;
+}
+nav .menu {
+    margin-left: 15vw;
+    font-family: 'Roboto', sans-serif;
+}
+nav .menu ul {
+    display: flex!important;
+    list-style-type: none;
+}
+nav .menu ul li {
+    padding: 0 2rem;
+}
+nav .menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav .menu ul li a.active::after {
+    width: 1rem;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.3rem;
+}
+
+.about {
+    color: white;
+}
+.about .aboutus {
+    padding-top: 7rem;
+    padding-left: 7rem;
+    padding-bottom: 7rem;
+}
+.about .aboutus .judul-about {
+    font-family: 'Quando', sans;
+    font-size: 2rem;
+}
+.about .aboutus .deskripsi-about {
+    width: 400px;
+}
+.about .col {
+    padding: 0!important;
+}
+
+.about .visi-misi .judul-visi-misi {
+    font-family: 'Quando', serif;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+.about .visi-misi .horizontal-line {
+    width: 3rem;
+    height: 6px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.about .visi-misi .deskripsi {
+    width: 490px;
+    margin: 0 auto;
+}
+.about .visi-misi .judul-visi-misi.material {
+    margin-top: 8rem;
+}
+
+.footer {
+    background-color: #DDB63C;
+    padding: 4rem 0;
+    color: white;
+}
+.footer .judul-footer {
+    font-family: 'Quantico', sans-serif;
+    font-size: 1.7rem;
+}
+.footer .subjudul-footer {
+    font-family: 'Quando', serif;
+    font-size: 1rem;
+}
+.footer .kanan .col {
+    font-family: 'Quando', serif;
+    font-size: 1rem;
+}
+
+
+.mybtn {
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.7rem;
+    border-radius: 6px;
+}
