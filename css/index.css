@@ -54,12 +54,6 @@ nav .menu ul li a.active::after {
 .hero .kiri .subjudul {
     font-family: 'Inter', sans-serif;
 }
-.mybtn {
-    text-decoration: none;
-    color: white;
-    padding: 0.3rem 1.7rem;
-    border-radius: 6px;
-}
 .hero .hero-button-about {
     background-color: #DDB63C;
 }
@@ -189,4 +183,12 @@ nav .menu ul li a.active::after {
 .footer .kanan .col {
     font-family: 'Quando', serif;
     font-size: 1rem;
+}
+
+
+.mybtn {
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.7rem;
+    border-radius: 6px;
 }
