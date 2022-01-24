@@ -116,6 +116,29 @@ nav .menu ul li a.active::after {
         margin-bottom: 6rem;
     }
 }
+@media only screen and (max-width: 576px) {
+    .about .aboutus {
+        padding: 7rem 2rem 7rem 2rem; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .kiri .aboutus {
+        padding-left: 2rem!important;
+        text-align: center;
+    }
+    .about .kiri .aboutus .deskripsi-about{
+        padding-left: 0rem!important;
+        padding-right: 0rem!important;
+    }
+    .about .visi-misi .deskripsi {
+        width: fit-content;
+        padding: 0 2rem;
+    }
+    .about .deskripsi-material {
+        margin-bottom: 5rem!important;
+    }
+}
 
 .footer {
     background-color: #DDB63C;
@@ -134,7 +157,33 @@ nav .menu ul li a.active::after {
     font-family: 'Quando', serif;
     font-size: 1rem;
 }
-
+@media only screen and (max-width: 992px) {
+    .footer .kiri {
+        width: 300px;
+    }
+    .footer .kanan .col {
+        padding: 0!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer .kiri {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer .kiri {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .kanan {
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .footer {
+        padding-bottom: 2rem!important;
+    }
+}
 
 .mybtn {
     text-decoration: none;

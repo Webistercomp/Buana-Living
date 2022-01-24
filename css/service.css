@@ -32,6 +32,12 @@ nav .menu ul li a.active::after {
     background-color: black;
     border-radius: 0.3rem;
 }
+@media only screen and (max-width: 992px) {
+    nav .menu ul li {
+        padding: 0 2rem;
+        width: fit-content;
+    }
+}
 
 
 .hero {
@@ -44,12 +50,6 @@ nav .menu ul li a.active::after {
 .hero .container {
     height: 100%;
     color: white;
-}
-.mybtn {
-    text-decoration: none;
-    color: white;
-    padding: 0.3rem 1.7rem;
-    border-radius: 6px;
 }
 
 
@@ -83,6 +83,19 @@ nav .menu ul li a.active::after {
 .product .button a {
     background-color: #DDB63C;
 }
+@media only screen and (max-width: 1200px) {
+    .product .list-product .col {
+        padding: 0.5rem;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .product .list-product .col {
+        padding: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+}
 
 .service {
     background-color: #DDB63C;
@@ -106,6 +119,25 @@ nav .menu ul li a.active::after {
     width: 520px;
     letter-spacing: 1px;
 }
+@media only screen and (max-width: 992px) {
+    .details .deskripsi {
+        width: fit-content!important;
+    }
+    .details .details-item {
+        margin-bottom: 4rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .details .details-item {
+        margin-bottom: 7rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .details .judul-detail-item,
+    .details .deskripsi {
+        text-align: center!important;
+    }
+}
 
 
 .footer {
@@ -124,4 +156,39 @@ nav .menu ul li a.active::after {
 .footer .kanan .col {
     font-family: 'Quando', serif;
     font-size: 1rem;
+}
+@media only screen and (max-width: 992px) {
+    .footer .kiri {
+        width: 300px;
+    }
+    .footer .kanan .col {
+        padding: 0!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer .kiri {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer .kiri {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .kanan {
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .footer {
+        padding-bottom: 2rem!important;
+    }
+}
+
+
+.mybtn {
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 1.7rem;
+    border-radius: 6px;
 }
