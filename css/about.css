@@ -9,7 +9,9 @@ body {
 nav {
     background-color: #E9C33F;
     padding: 0.5rem;
+    position: fixed;
     width: 100%;
+    z-index: 1;
 }
 nav .menu {
     margin-left: 15vw;
@@ -32,6 +34,12 @@ nav .menu ul li a.active::after {
     background-color: black;
     border-radius: 0.3rem;
 }
+@media only screen and (max-width: 992px) {
+    nav .menu ul li {
+        padding: 0 2rem;
+        width: fit-content;
+    }
+}
 
 .about {
     color: white;
@@ -40,18 +48,24 @@ nav .menu ul li a.active::after {
     padding-top: 7rem;
     padding-left: 7rem;
     padding-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .aboutus .wrap {
+    width: 100%;
+    height: 100%;
 }
 .about .aboutus .judul-about {
     font-family: 'Quando', sans;
     font-size: 2rem;
 }
 .about .aboutus .deskripsi-about {
-    width: 400px;
+    padding-right: 2rem;
 }
 .about .col {
     padding: 0!important;
 }
-
 .about .visi-misi .judul-visi-misi {
     font-family: 'Quando', serif;
     font-size: 2rem;
@@ -70,6 +84,37 @@ nav .menu ul li a.active::after {
 }
 .about .visi-misi .judul-visi-misi.material {
     margin-top: 8rem;
+}
+@media only screen and (max-width: 1400px) {
+    .about .judul-visi-misi.material {
+        margin-top: 4rem!important;
+    }
+}
+@media only screen and (max-width: 1191px) {
+    .about img {
+        display: none!important;
+    }
+    .about .kiri {
+        width: 100%!important;
+    }
+    .about .kiri .aboutus {
+        padding-left: 0!important;
+        padding-bottom: 2rem!important;
+        text-align: center;
+    }
+    .about .kiri .aboutus .deskripsi-about{
+        padding-left: 5rem!important;
+        padding-right: 5rem!important;
+    }
+    .about .kanan {
+        width: 100%!important;
+    }
+    .about .kanan .judul-visi-misi {
+        margin-top: 0!important;
+    }
+    .about .kanan .deskripsi-material {
+        margin-bottom: 6rem;
+    }
 }
 
 .footer {

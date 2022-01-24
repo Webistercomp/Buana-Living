@@ -16,13 +16,25 @@
                 <div class="brand">
                     <img src="img/brand-nav.png" alt="Brand Logo" width="150px">
                 </div>
-                <div class="menu d-flex">
+                <div class="menu d-none d-lg-flex">
                     <ul class="d-flex align-items-center m-0">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
+                </div>
+                <div class="menu-small d-block d-lg-none ms-auto">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent" type="button" id="menulist" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/icons/svg/menu-list.svg" alt="Menu" width="30px">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="menulist">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,13 +42,15 @@
 
     <section class="about">
         <div class="row w-100 m-0">
-            <div class="col kiri" style="flex-basis: 43%!important;">
+            <div class="col kiri col-5">
                 <div class="aboutus">
-                    <div class="judul-about">
-                        About us
-                    </div>
-                    <div class="deskripsi-about mt-4">
-                        Buana Living is a trading company from Indonesia that focuses on furniture. Our main product is teak wood furniture and we are committed to providing quality furniture with customization services for the global market both wholesale and retail. We work with high-quality manufacturers who care deeply about the environment. All of our wood products are produced from quality and legal wood with SVLK/FLEGT certification. 
+                    <div class="wrap">
+                        <div class="judul-about">
+                            About us
+                        </div>
+                        <div class="deskripsi-about mt-4">
+                            Buana Living is a trading company from Indonesia that focuses on furniture. Our main product is teak wood furniture and we are committed to providing quality furniture with customization services for the global market both wholesale and retail. We work with high-quality manufacturers who care deeply about the environment. All of our wood products are produced from quality and legal wood with SVLK/FLEGT certification. 
+                        </div>
                     </div>
                 </div>
                 <div class="ilustrasi">
@@ -44,7 +58,7 @@
                     <img src="img/ilustrasi/about/ilustrasi-3.png" alt="" width="100%">
                 </div>
             </div>
-            <div class="col kanan" style="flex-basis: 57%!important;">
+            <div class="col kanan col-7">
                 <img src="img/ilustrasi/about/ilustrasi-1.png" alt="" width="100%">
                 <div class="visi-misi text-center">
                     <div class="judul-visi-misi mt-4">Vision</div>
@@ -59,7 +73,7 @@
                     </div>
                     <div class="judul-visi-misi material">Material</div>
                     <div class="horizontal-line my-4"></div>
-                    <div class="deskripsi">
+                    <div class="deskripsi deskripsi-material">
                         We only work with manufacturers that pay attention to the environment. sustainable products are our top priority by using only SVLK/FLEGT certified legal wood. The wood we use comes from government plantations, namely Perhutani, which is cared for optimally and carefully managed to produce quality wood. We use teak wood as the main material in our furniture but you can customize your own furniture according to the material that suits your needs.
                     </div>
                 </div>
@@ -70,7 +84,6 @@
     <section class="footer">
         <div class="container">
             <div class="d-flex">
-
                 <div class="kiri">
                     <div class="judul-footer">BUANA LIVING</div>
                     <div class="subjudul-footer">Affordable For Living</div>
