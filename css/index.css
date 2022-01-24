@@ -32,6 +32,12 @@ nav .menu ul li a.active::after {
     background-color: black;
     border-radius: 0.3rem;
 }
+@media only screen and (max-width: 992px) {
+    nav .menu ul li {
+        padding: 0 2rem;
+        width: fit-content;
+    }
+}
 
 .hero {
     min-height: 100vh;
@@ -40,7 +46,7 @@ nav .menu ul li a.active::after {
     radial-gradient(at 0px 0px, #C8C4BA -90%, #191919 60%) bottom right;
 }
 .hero .container {
-    height: 100vh!important;
+    height: 100%!important;
     color: white;
 }
 .hero .kiri {
@@ -65,6 +71,60 @@ nav .menu ul li a.active::after {
     position: relative;
     top: 100px;
     z-index: 0;
+}
+@media only screen and (max-width: 1400px) {
+    .hero {
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .kiri {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0!important;
+    }
+    .hero .kanan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .kanan img {
+        position:static;
+    };
+    /* .hero .kanan img {
+        position: relative;
+        top: 100px;
+        z-index: 0;
+        left: 100px;
+    } */
+}
+@media only screen and (max-width: 1200px) {
+    .hero .kiri .judul {
+        font-family: 'Quando', serif;
+        font-size: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero .kanan img {
+        width: 100%;
+    }
+    .hero .kiri {
+        margin-top: 9rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero .kanan {
+        display: none!important;
+    }
+    .hero .kanan img {
+        display: none;
+    }
+    .hero .kiri {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .about {
@@ -116,6 +176,15 @@ nav .menu ul li a.active::after {
     background-color: black;
     border-radius: 6px;
 }
+@media only screen and (max-width: 992px) {
+    .visi-misi .kiri,
+    .visi-misi .kanan {
+        display: none;
+    }
+    .visi-misi .tengah {
+        padding: 2rem;
+    }
+}
 
 .product {
     margin-top: 4rem;
@@ -166,6 +235,24 @@ nav .menu ul li a.active::after {
     padding-right: 3rem;
     font-size: 1rem;
 }
+.service .box img {
+    height: 80%;
+    width: auto;
+}
+@media only screen and (max-width: 1200px) {
+    .service .box img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .service .box {
+        margin-bottom: 4rem;
+    }
+    .service .box img {
+        width: 70%;
+    }
+}
 
 .footer {
     background-color: #DDB63C;
@@ -183,6 +270,33 @@ nav .menu ul li a.active::after {
 .footer .kanan .col {
     font-family: 'Quando', serif;
     font-size: 1rem;
+}
+@media only screen and (max-width: 992px) {
+    .footer .kiri {
+        width: 300px;
+    }
+    .footer .kanan .col {
+        padding: 0!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer .kiri {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer .kiri {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .kanan {
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .footer {
+        padding-bottom: 2rem!important;
+    }
 }
 
 
