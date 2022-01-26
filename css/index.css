@@ -42,8 +42,7 @@ nav .menu ul li a.active::after {
 .hero {
     min-height: 100vh;
     background: radial-gradient(at 0px 0px,
-      #C8C4BA -90%, #191919 60%) top left,
-    radial-gradient(at 0px 0px, #C8C4BA -90%, #191919 60%) bottom right;
+      #C8C4BA -90%, #191919 60%);
 }
 .hero .container {
     height: 100%!important;
