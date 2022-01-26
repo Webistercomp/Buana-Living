@@ -8,6 +8,7 @@ nav {
     background-color: #E9C33F;
     padding: 0.5rem;
     width: 100%;
+    z-index: 1;
 }
 nav .menu {
     margin-left: 15vw;
@@ -29,6 +30,12 @@ nav .menu ul li a.active::after {
     height: 0.5rem;
     background-color: black;
     border-radius: 0.3rem;
+}
+@media only screen and (max-width: 992px) {
+    nav .menu ul li {
+        padding: 0 2rem;
+        width: fit-content;
+    }
 }
 
 .contact .judul-contact {
@@ -87,6 +94,33 @@ nav .menu ul li a.active::after {
 .footer .kanan .col {
     font-family: 'Quando', serif;
     font-size: 1rem;
+}
+@media only screen and (max-width: 992px) {
+    .footer .kiri {
+        width: 300px;
+    }
+    .footer .kanan .col {
+        padding: 0!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer .kiri {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer .kiri {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .kanan {
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .footer {
+        padding-bottom: 2rem!important;
+    }
 }
 .mybtn {
     text-decoration: none;

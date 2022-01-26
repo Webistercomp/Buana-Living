@@ -89,21 +89,16 @@ nav .menu ul li a.active::after {
         align-items: center;
         justify-content: center;
     }
-    .hero .kanan img {
-        position:static;
-    };
-    /* .hero .kanan img {
-        position: relative;
-        top: 100px;
-        z-index: 0;
-        left: 100px;
-    } */
+    
 }
 @media only screen and (max-width: 1200px) {
     .hero .kiri .judul {
         font-family: 'Quando', serif;
         font-size: 3.2rem;
     }
+    .hero .kanan img {
+        top: 50px
+    };
 }
 
 @media only screen and (max-width: 992px) {
